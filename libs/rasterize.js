@@ -1,3 +1,5 @@
+/* CREDIT @TJHOLOWAYCHUK */
+
 var exec = require('child_process').exec
   , script = app.get('root') + '/scripts/rasterize.js'
   , bin = app.get('phantom');
