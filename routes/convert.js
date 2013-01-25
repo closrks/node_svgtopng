@@ -7,14 +7,14 @@ app.post('/convert', function(req, res, next) {
 
 
 	temp.open('sample', function(err, page) {
-		
-		fs.write(page.fd, req.body.test);
+
+		fs.write(page.fd, req.body.html);
 
 		var url = page.path
 		, options = {
-			  path: 'sample.png'
-			, viewportWidth: 1024
-			, viewportHeight: 800
+			  path: req.body.path
+			, viewportWidth: req.body.viewportWidth
+			, viewportHeight: red.body.viewportHeight
 		};
 	
 		rasterize(url, options, function(err){
