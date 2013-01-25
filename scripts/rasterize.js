@@ -1,3 +1,5 @@
+/* CREDIT @TJHOLOWAYCHUK */
+
 var page = require('webpage').create()
   , url = phantom.args[0]
   , path = phantom.args[1]
